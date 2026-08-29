@@ -8,8 +8,6 @@
 
 JVFI 是 Jellyfin 的服务器端实时补帧插件。播放时由 Jellyfin 官方 `jellyfin-ffmpeg` 生成可自定义帧率的标准转码流，Jellyfin Web、Jellyfin Media Player、Android 和 Android TV 等客户端无需另外安装扩展。
 
-同一段 24 FPS 视频、相同分辨率与时间范围，左侧为原始节奏，右侧为 JVFI 60 FPS 输出。素材：Sintel，Blender Foundation，CC BY 3.0。
-
 ## 主要功能
 
 - 自定义 `23.976–240 FPS` 目标输出帧率，默认 60 FPS

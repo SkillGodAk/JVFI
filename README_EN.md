@@ -8,8 +8,6 @@
 
 JVFI is a server-side real-time frame interpolation plugin for Jellyfin. During playback, it uses the official `jellyfin-ffmpeg` pipeline to produce a standard transcoded stream at a configurable frame rate. Jellyfin Web, Jellyfin Media Player, Android, and Android TV clients do not require a separate extension.
 
-The same 24 FPS scene, resolution, and time range: original cadence on the left and JVFI 60 FPS output on the right. Footage: Sintel, Blender Foundation, CC BY 3.0.
-
 ## Features
 
 - Configurable `23.976–240 FPS` target output, with 60 FPS as the default

@@ -6,7 +6,6 @@ on:
     paths:
       - 'manifest.json'
       - 'assets/jvfi-icon.png'
-      - 'assets/jvfi-comparison.mp4'
       - 'assets/donate-bank.jpg'
       - 'assets/donate-wechat.jpg'
       - '.github/workflows/pages.yml'
