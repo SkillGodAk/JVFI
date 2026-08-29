@@ -15,7 +15,7 @@ JVFI 是專為 Jellyfin 設計的伺服器端即時補幀插件。播放影片�
 - 支援 Jellyfin Web、Jellyfin Media Player、Android、Android TV 與標準轉碼串流客戶端
 - 提供即時補幀狀態、處理資訊與安全回退
 - 可分別設定 480p、720p、1080p、4K 最低輸出位元率
-- 設定介面支援繁體中文、英文與日文，並提供簡體中文說明
+- 設定介面支援繁體中文、英文與日文
 
 ## 硬體支援
 
@@ -43,7 +43,11 @@ JVFI 依伺服器實際能力選擇處理方式，不只依硬體型號判斷。
 
 ### Jellyfin 擴充庫
 
-進入 `控制台 -> 插件 -> 儲存庫`，新增：
+進入 `控制台 -> 插件 -> 儲存庫`，新增一個儲存庫。
+
+資源庫名稱：`JVFI`
+
+儲存庫網址：
 
 ```text
 https://skillgodak.github.io/JVFI/manifest.json
