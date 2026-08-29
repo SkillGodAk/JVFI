@@ -19,11 +19,11 @@ JVFI is a server-side real-time frame interpolation plugin for Jellyfin. During 
 - Falls back to a compatible path when hardware processing is unavailable and preserves normal Jellyfin playback when interpolation cannot run safely
 - Optional playback HUD for interpolation status, timeline FPS, compute throughput, and pipeline speed
 - Separate minimum bitrate controls for 480p, 720p, 1080p, and 4K output
-- Traditional Chinese, English, and Japanese settings UI, plus Simplified Chinese documentation
+- Traditional Chinese, English, and Japanese settings UI
 
 ## Install from the Jellyfin catalog
 
-Add this repository under `Dashboard` → `Plugins` → `Repositories`:
+Add a repository under `Dashboard` → `Plugins` → `Repositories`:
 
 - Name: `JVFI`
 - Repository URL:
