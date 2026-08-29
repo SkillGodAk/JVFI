@@ -3,7 +3,7 @@
     "guid": "b8d11789-88f4-4230-befd-9550952780ec",
     "name": "Jellyfin Video Frame Interpolation",
     "description": "Free server-side real-time frame interpolation for Jellyfin using the official jellyfin-ffmpeg pipeline.",
-    "overview": "JVFI server-side 60 FPS frame interpolation.",
+    "overview": "JVFI server-side configurable frame interpolation.",
     "owner": "SkillGodAK",
     "category": "General",
     "imageUrl": "https://raw.githubusercontent.com/SkillGodAk/Jellyfin-Video-Frame-Interpolation/main/assets/jvfi-icon.png",
