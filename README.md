@@ -10,9 +10,11 @@ JVFI 是 Jellyfin 的伺服器端即時補幀插件。播放時由 Jellyfin 官�
 
 ## 效果對比
 
-<!-- JVFI_DEMO -->
+<video src="https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/assets/jvfi-comparison.mp4" controls muted loop playsinline></video>
 
-同一段影片、相同解析度與時間範圍，左側為原始幀率，右側為 JVFI 補幀輸出。公開示範將使用可再散布素材。
+[開啟 60 FPS 對比影片](https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/assets/jvfi-comparison.mp4)
+
+同一段 24 FPS 影片、相同解析度與時間範圍，左側為原始節奏，右側為 JVFI 60 FPS 輸出。素材：Sintel，Blender Foundation，CC BY 3.0。
 
 ## 主要功能
 
