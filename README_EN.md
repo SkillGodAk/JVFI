@@ -40,7 +40,7 @@ Add this repository under `Dashboard` → `Plugins` → `Repositories`:
 https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/manifest.json
 ```
 
-Return to the plugin catalog, search for `JVFI`, install **JVFI - Jellyfin Video Frame Interpolation**, and fully restart Jellyfin.
+Return to the plugin catalog, search for `JVFI`, install **JVFI**, and fully restart Jellyfin.
 
 ## Manual installation
 
@@ -69,12 +69,3 @@ Fully restart Jellyfin to load the plugin.
 | Android / Android TV | Standard transcoded stream supported |
 | Other hardware and newer Jellyfin versions | Enabled according to runtime capability checks |
 
-## Support and contact
-
-Voluntary donations help fund Jellyfin compatibility work, hardware testing, and continued maintenance.
-
-- QQ group: `1018495751`
-- Telegram: [Join the group](https://t.me/+l1v_7ag4mJQ3NjI1)
-- GitHub Issues: [Report a problem](https://github.com/SkillGodAk/Jellyfin-Video-Frame-Interpolation/issues)
-
-JVFI is an independent third-party project and is not affiliated with the Jellyfin project.

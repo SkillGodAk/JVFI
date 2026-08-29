@@ -1,20 +1,20 @@
 [
   {
     "guid": "b8d11789-88f4-4230-befd-9550952780ec",
-    "name": "JVFI - Jellyfin Video Frame Interpolation",
-    "description": "JVFI adds configurable server-side frame interpolation to Jellyfin through the official jellyfin-ffmpeg pipeline.",
-    "overview": "JVFI configurable frame interpolation for Jellyfin.",
+    "name": "JVFI",
+    "description": "Jellyfin Video Frame Interpolation：Jellyfin 伺服器端可自訂幀率的即時補幀插件。",
+    "overview": "JVFI Jellyfin Video Frame Interpolation",
     "owner": "SkillGodAK",
     "category": "General",
     "imageUrl": "https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/assets/jvfi-icon.png",
     "versions": [
       {
         "version": "0.7.2.0",
-        "changelog": "Configurable 23.976-240 FPS output target, practical bitrate defaults, runtime telemetry, HUD status, and safe capability-based fallback.",
+        "changelog": "新增 23.976-240 FPS 自訂輸出、統一 FFmpeg/HUD/即時工作階段幀率、通用混合管線與能力偵測、實用位元率預設、即時遙測、HUD 狀態與安全回退。已驗證 Jellyfin 10.11.11 與 RK3588 參考系統。",
         "targetAbi": "10.11.11.0",
         "sourceUrl": "https://github.com/SkillGodAk/Jellyfin-Video-Frame-Interpolation/releases/download/v0.7.2/jellyfin-video-frame-interpolation_0.7.2.0.zip",
         "checksum": "f84c52eb8fe675f8b56a13eae88d7e74",
-        "timestamp": "2026-08-29T07:15:00Z"
+        "timestamp": "2026-08-29T07:40:00Z"
       }
     ]
   }

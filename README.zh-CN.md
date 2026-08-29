@@ -40,7 +40,7 @@ JVFI 是 Jellyfin 的服务器端实时补帧插件。播放时由 Jellyfin 官�
 https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/manifest.json
 ```
 
-保存后返回插件目录，搜索 `JVFI`，安装 **JVFI - Jellyfin Video Frame Interpolation**，再完整重启 Jellyfin。
+保存后返回插件目录，搜索 `JVFI`，安装 **JVFI**，再完整重启 Jellyfin。
 
 ## 手动安装
 

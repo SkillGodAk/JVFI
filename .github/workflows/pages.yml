@@ -7,6 +7,8 @@ on:
       - 'manifest.json'
       - 'assets/jvfi-icon.png'
       - 'assets/jvfi-comparison.mp4'
+      - 'assets/donate-bank.jpg'
+      - 'assets/donate-wechat.jpg'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -34,6 +36,8 @@ jobs:
           cp manifest.json _site/manifest.json
           cp assets/jvfi-icon.png _site/assets/jvfi-icon.png
           cp assets/jvfi-comparison.mp4 _site/assets/jvfi-comparison.mp4
+          cp assets/donate-bank.jpg _site/assets/donate-bank.jpg
+          cp assets/donate-wechat.jpg _site/assets/donate-wechat.jpg
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

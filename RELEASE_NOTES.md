@@ -1,11 +1,11 @@
 # JVFI 0.7.2
 
-- Adds a configurable 23.976–240 FPS output target; the default remains 60 FPS.
-- Uses the selected target consistently in FFmpeg, HUD, and live session metrics.
-- Uses the official Jellyfin FFmpeg pipeline.
-- Adds universal hybrid 60 FPS planning and capability probing.
-- Restores practical default bitrate ceilings for 480p, 720p, 1080p, and 4K.
-- Adds runtime telemetry, HUD state, and safe fallback behavior.
-- Validated against Jellyfin 10.11.11 on the current RK3588 reference system.
+- 新增可自訂 `23.976–240 FPS` 的輸出幀率，預設值維持 60 FPS。
+- FFmpeg、HUD 與即時播放工作階段統一使用所選目標幀率。
+- 使用 Jellyfin 官方 FFmpeg 播放管線。
+- 新增通用混合 60 FPS 管線規劃與硬體能力偵測。
+- 還原 480p、720p、1080p 與 4K 的實用預設位元率上限。
+- 新增即時遙測、HUD 狀態與安全回退行為。
+- 已在 Jellyfin 10.11.11 與目前 RK3588 參考系統完成驗證。
 
-This release contains compiled binaries only. Core source code is not published.
+本版本提供編譯後的插件檔案；核心原始碼未公開。
