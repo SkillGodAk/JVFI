@@ -13,7 +13,7 @@
         "changelog": "新增 23.976-240 FPS 自訂輸出、統一 FFmpeg/HUD/即時工作階段幀率、通用混合管線與能力偵測、實用位元率預設、即時遙測、HUD 狀態與安全回退。已驗證 Jellyfin 10.11.11 與 RK3588 參考系統。",
         "targetAbi": "10.11.11.0",
         "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.2/jellyfin-video-frame-interpolation_0.7.2.0.zip",
-        "checksum": "57359214108f091a9211975153dcae1d",
+        "checksum": "58f1205573ce8717ef92c9ec4cf70488",
         "timestamp": "2026-08-29T07:40:00Z"
       }
     ]
