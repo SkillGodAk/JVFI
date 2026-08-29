@@ -35,7 +35,6 @@ jobs:
           mkdir -p _site/assets
           cp manifest.json _site/manifest.json
           cp assets/jvfi-icon.png _site/assets/jvfi-icon.png
-          cp assets/jvfi-comparison.mp4 _site/assets/jvfi-comparison.mp4
           cp assets/donate-bank.jpg _site/assets/donate-bank.jpg
           cp assets/donate-wechat.jpg _site/assets/donate-wechat.jpg
           touch _site/.nojekyll
