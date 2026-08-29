@@ -40,7 +40,7 @@ JVFI 是 Jellyfin 的伺服器端即時補幀插件。播放時由 Jellyfin 官�
 https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/manifest.json
 ```
 
-儲存後回到插件目錄，搜尋 `JVFI`，安裝 **JVFI - Jellyfin Video Frame Interpolation**，再完整重新啟動 Jellyfin。
+儲存後回到插件目錄，搜尋 `JVFI`，安裝 **JVFI**，再完整重新啟動 Jellyfin。
 
 ## 手動安裝
 
@@ -69,12 +69,16 @@ Docker 範例：
 | Android / Android TV | 支援標準轉碼串流 |
 | 其他硬體與較新 Jellyfin 版本 | 啟動時依實際能力檢查結果決定是否啟用 |
 
-## 贊助與聯絡
+## 贊助作者
 
-覺得 JVFI 好用，歡迎自願贊助作者，支持後續 Jellyfin 版本相容、硬體測試與功能維護。
+覺得 JVFI 好用，歡迎支持作者。
 
-- QQ 群：`1018495751`
-- Telegram 群：[加入群組](https://t.me/+l1v_7ag4mJQ3NjI1)
-- GitHub Issues：[回報問題](https://github.com/SkillGodAk/Jellyfin-Video-Frame-Interpolation/issues)
+### 銀行收款
+
+<img src="assets/donate-bank.jpg" alt="銀行收款 QR Code" width="360">
+
+### 微信收款
+
+<img src="assets/donate-wechat.jpg" alt="微信收款 QR Code" width="360">
 
 JVFI 是獨立第三方插件，並非 Jellyfin 官方產品。Jellyfin 名稱及相關商標歸其權利人所有。
