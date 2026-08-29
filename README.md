@@ -11,6 +11,7 @@ JVFI 是專為 Jellyfin 設計的伺服器端即時補幀插件。播放影片�
 - 支援自訂 `23.976-240 FPS` 輸出，預設 `60 FPS`
 - 伺服器端即時補幀，預設保留原始解析度
 - 自動偵測硬體加速能力，支援 Intel、AMD、NVIDIA、Rockchip 與 Apple 常見平台
+- 硬體與補幀管線顯示會依 Jellyfin 實際硬體加速設定同步判斷
 - 硬體不可用時使用相容路徑，無法安全補幀時保留 Jellyfin 原始播放流程
 - 支援 Jellyfin Web、Jellyfin Media Player、Android、Android TV 與標準轉碼串流客戶端
 - 提供即時補幀狀態、處理資訊與安全回退

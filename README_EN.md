@@ -15,6 +15,7 @@ JVFI is a server-side real-time frame interpolation plugin for Jellyfin. During 
 - Supports Jellyfin Web, Jellyfin Media Player, Android, Android TV, and compatible clients
 - Uses the official `jellyfin-ffmpeg` binary without replacing FFmpeg
 - Probes actual decoder, processing, and encoder capabilities before selecting a path
+- Hardware and interpolation pipeline display follows Jellyfin's actual hardware acceleration settings
 - Detects common Intel QSV / VAAPI, AMD VAAPI / AMF, NVIDIA NVENC, Rockchip RKMPP, and Apple VideoToolbox paths
 - Falls back to a compatible path when hardware processing is unavailable and preserves normal Jellyfin playback when interpolation cannot run safely
 - Optional playback HUD for interpolation status, timeline FPS, compute throughput, and pipeline speed

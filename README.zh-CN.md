@@ -15,6 +15,7 @@ JVFI 是 Jellyfin 的服务器端实时补帧插件。播放时由 Jellyfin 官�
 - 支持 Jellyfin Web、Jellyfin Media Player、Android、Android TV 与其他兼容客户端
 - 使用 Jellyfin 官方 `jellyfin-ffmpeg`，无需替换 FFmpeg
 - 自动检测实际可用的解码、图像处理与编码能力
+- 硬件与补帧管线显示会根据 Jellyfin 实际硬件加速设置同步判断
 - 支持常见 Intel QSV / VAAPI、AMD VAAPI / AMF、NVIDIA NVENC、Rockchip RKMPP 与 Apple VideoToolbox 路径检测
 - 硬件路径不可用时自动使用兼容模式；无法安全补帧时保留原 Jellyfin 播放流程
 - 播放 HUD 显示补帧状态、时间轴 FPS、运算吞吐与管线速度
