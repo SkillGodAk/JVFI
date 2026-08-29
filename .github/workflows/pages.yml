@@ -6,6 +6,7 @@ on:
     paths:
       - 'manifest.json'
       - 'assets/jvfi-icon.png'
+      - 'assets/jvfi-comparison.mp4'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -32,6 +33,7 @@ jobs:
           mkdir -p _site/assets
           cp manifest.json _site/manifest.json
           cp assets/jvfi-icon.png _site/assets/jvfi-icon.png
+          cp assets/jvfi-comparison.mp4 _site/assets/jvfi-comparison.mp4
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

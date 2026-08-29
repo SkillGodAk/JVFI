@@ -10,9 +10,11 @@ JVFI is a server-side real-time frame interpolation plugin for Jellyfin. During 
 
 ## Comparison
 
-<!-- JVFI_DEMO -->
+<video src="https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/assets/jvfi-comparison.mp4" controls muted loop playsinline></video>
 
-The same scene, resolution, and time range: original frame rate on the left and JVFI output on the right. The public demo will use redistributable footage.
+[Open the 60 FPS comparison video](https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/assets/jvfi-comparison.mp4)
+
+The same 24 FPS scene, resolution, and time range: original cadence on the left and JVFI 60 FPS output on the right. Footage: Sintel, Blender Foundation, CC BY 3.0.
 
 ## Features
 
