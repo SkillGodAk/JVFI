@@ -8,12 +8,6 @@
 
 JVFI is a server-side real-time frame interpolation plugin for Jellyfin. During playback, it uses the official `jellyfin-ffmpeg` pipeline to produce a standard transcoded stream at a configurable frame rate. Jellyfin Web, Jellyfin Media Player, Android, and Android TV clients do not require a separate extension.
 
-## Comparison
-
-<video src="https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/assets/jvfi-comparison.mp4" controls muted loop playsinline></video>
-
-[Open the 60 FPS comparison video](https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/assets/jvfi-comparison.mp4)
-
 The same 24 FPS scene, resolution, and time range: original cadence on the left and JVFI 60 FPS output on the right. Footage: Sintel, Blender Foundation, CC BY 3.0.
 
 ## Features
@@ -37,14 +31,14 @@ Add this repository under `Dashboard` → `Plugins` → `Repositories`:
 - Repository URL:
 
 ```text
-https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/manifest.json
+https://skillgodak.github.io/JVFI/manifest.json
 ```
 
 Return to the plugin catalog, search for `JVFI`, install **JVFI**, and fully restart Jellyfin.
 
 ## Manual installation
 
-Download the ZIP from [GitHub Releases](https://github.com/SkillGodAk/Jellyfin-Video-Frame-Interpolation/releases) and extract it to:
+Download the ZIP from [GitHub Releases](https://github.com/SkillGodAk/JVFI/releases) and extract it to:
 
 ```text
 jellyfin/config/plugins/Jellyfin Video Frame Interpolation/

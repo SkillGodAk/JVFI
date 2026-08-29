@@ -8,12 +8,6 @@
 
 JVFI 是 Jellyfin 的服务器端实时补帧插件。播放时由 Jellyfin 官方 `jellyfin-ffmpeg` 生成可自定义帧率的标准转码流，Jellyfin Web、Jellyfin Media Player、Android 和 Android TV 等客户端无需另外安装扩展。
 
-## 效果对比
-
-<video src="https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/assets/jvfi-comparison.mp4" controls muted loop playsinline></video>
-
-[打开 60 FPS 对比视频](https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/assets/jvfi-comparison.mp4)
-
 同一段 24 FPS 视频、相同分辨率与时间范围，左侧为原始节奏，右侧为 JVFI 60 FPS 输出。素材：Sintel，Blender Foundation，CC BY 3.0。
 
 ## 主要功能
@@ -37,14 +31,14 @@ JVFI 是 Jellyfin 的服务器端实时补帧插件。播放时由 Jellyfin 官�
 - 存储库网址：
 
 ```text
-https://skillgodak.github.io/Jellyfin-Video-Frame-Interpolation/manifest.json
+https://skillgodak.github.io/JVFI/manifest.json
 ```
 
 保存后返回插件目录，搜索 `JVFI`，安装 **JVFI**，再完整重启 Jellyfin。
 
 ## 手动安装
 
-从 [GitHub Releases](https://github.com/SkillGodAk/Jellyfin-Video-Frame-Interpolation/releases) 下载 ZIP，解压到：
+从 [GitHub Releases](https://github.com/SkillGodAk/JVFI/releases) 下载 ZIP，解压到：
 
 ```text
 jellyfin/config/plugins/Jellyfin Video Frame Interpolation/
