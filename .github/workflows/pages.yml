@@ -1,0 +1,40 @@
+name: Deploy Jellyfin plugin catalog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'manifest.json'
+      - 'assets/jvfi-icon.png'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Prepare catalog site
+        run: |
+          mkdir -p _site/assets
+          cp manifest.json _site/manifest.json
+          cp assets/jvfi-icon.png _site/assets/jvfi-icon.png
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
