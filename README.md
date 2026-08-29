@@ -65,6 +65,10 @@ Docker 範例：
 
 覺得 JVFI 好用，歡迎支持作者。
 
+### 國外贊助
+
+[Buy Me a Coffee](https://buymeacoffee.com/SkillGodAK)
+
 ### 銀行收款
 
 <img src="assets/donate-bank.jpg" alt="銀行收款 QR Code" width="360">

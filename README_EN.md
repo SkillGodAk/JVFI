@@ -65,6 +65,10 @@ Fully restart Jellyfin to load the plugin.
 
 If JVFI is useful to you, support for the author is welcome.
 
+### International Support
+
+[Buy Me a Coffee](https://buymeacoffee.com/SkillGodAK)
+
 ### Bank transfer
 
 <img src="assets/donate-bank.jpg" alt="Bank transfer QR code" width="360">

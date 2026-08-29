@@ -65,6 +65,10 @@ Docker 示例：
 
 如果 JVFI 对你有帮助，欢迎支持作者。
 
+### 海外赞助
+
+[Buy Me a Coffee](https://buymeacoffee.com/SkillGodAK)
+
 ### 银行收款
 
 <img src="assets/donate-bank.jpg" alt="银行收款二维码" width="360">
