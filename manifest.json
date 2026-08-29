@@ -9,12 +9,12 @@
     "imageUrl": "https://skillgodak.github.io/JVFI/assets/jvfi-icon.png",
     "versions": [
       {
-        "version": "0.7.2.0",
-        "changelog": "新增 23.976-240 FPS 自訂輸出、統一 FFmpeg/HUD/即時工作階段幀率、通用混合管線與能力偵測、實用位元率預設、即時遙測、HUD 狀態與安全回退。已驗證 Jellyfin 10.11.11 與 RK3588 參考系統。",
+        "version": "0.7.3.0",
+        "changelog": "修正停止播放後殘留舊工作階段與補幀狀態；改善狀態清理、連續處理區段統計與暫停期間的已處理片長計算。",
         "targetAbi": "10.11.11.0",
-        "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.2/jellyfin-video-frame-interpolation_0.7.2.0.zip",
-        "checksum": "58f1205573ce8717ef92c9ec4cf70488",
-        "timestamp": "2026-08-29T07:40:00Z"
+        "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.3/jellyfin-video-frame-interpolation_0.7.3.0.zip",
+        "checksum": "861816f9ac4735bbf29dfd5dcdefb3d7",
+        "timestamp": "2026-08-30T00:00:00Z"
       }
     ]
   }
