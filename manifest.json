@@ -13,7 +13,7 @@
         "changelog": "修正停止播放後殘留舊工作階段與補幀狀態；改善狀態清理、連續處理區段統計與暫停期間的已處理片長計算；硬體與補幀管線頁面僅顯示實際解碼與編碼方式。",
         "targetAbi": "10.11.11.0",
         "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.3/jellyfin-video-frame-interpolation_0.7.3.0.zip",
-        "checksum": "5E7CE186C7999A0D8419F5950A4093F7",
+        "checksum": "BACF24BFF9FB209AAD7895747C577EA9",
         "timestamp": "2026-08-30T00:00:00Z"
       }
     ]
