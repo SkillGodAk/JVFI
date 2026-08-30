@@ -1,0 +1,75 @@
+name: Bug Report
+description: Report JVFI installation, playback, interpolation, or hardware issues
+title: "[Bug] "
+labels:
+  - "問題回報 / Bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting this issue. Remove IP addresses, tokens, account names, and private paths from logs first.
+  - type: input
+    id: jvfi-version
+    attributes:
+      label: JVFI version
+      placeholder: For example, 0.7.3
+    validations:
+      required: true
+  - type: input
+    id: jellyfin-version
+    attributes:
+      label: Jellyfin version
+      placeholder: For example, 10.11.11
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Operating system and hardware
+      placeholder: |-
+        OS:
+        CPU:
+        GPU / hardware acceleration:
+        RAM:
+    validations:
+      required: true
+  - type: dropdown
+    id: client
+    attributes:
+      label: Client
+      options:
+        - Jellyfin Web
+        - Jellyfin Media Player
+        - Android
+        - Android TV
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: playback
+    attributes:
+      label: Playback information
+      placeholder: |-
+        Resolution:
+        Source FPS:
+        Target FPS:
+        HUD enabled:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and reproduction steps
+      placeholder: |-
+        Problem:
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Jellyfin log
+      description: Paste or attach the relevant log after removing sensitive information.
+      render: text
+    validations:
+      required: true
