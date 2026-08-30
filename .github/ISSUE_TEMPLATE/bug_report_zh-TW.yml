@@ -1,0 +1,75 @@
+name: 問題回報
+description: 回報 JVFI 安裝、播放、補幀或硬體相關問題
+title: "[問題] "
+labels:
+  - "問題回報 / Bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝回報。請先移除 Jellyfin log 中的 IP、Token、帳號與私人路徑。
+  - type: input
+    id: jvfi-version
+    attributes:
+      label: JVFI 版本
+      placeholder: 例如 0.7.3
+    validations:
+      required: true
+  - type: input
+    id: jellyfin-version
+    attributes:
+      label: Jellyfin 版本
+      placeholder: 例如 10.11.11
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: 作業系統與硬體
+      placeholder: |-
+        作業系統：
+        CPU：
+        GPU / 硬體加速：
+        RAM：
+    validations:
+      required: true
+  - type: dropdown
+    id: client
+    attributes:
+      label: 播放器
+      options:
+        - Jellyfin Web
+        - Jellyfin Media Player
+        - Android
+        - Android TV
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: playback
+    attributes:
+      label: 播放資訊
+      placeholder: |-
+        影片解析度：
+        原始 FPS：
+        目標 FPS：
+        是否啟用 HUD：
+  - type: textarea
+    id: problem
+    attributes:
+      label: 問題描述與重現步驟
+      placeholder: |-
+        問題描述：
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Jellyfin Log
+      description: 請貼上或拖曳相關 log，並先移除敏感資訊。
+      render: text
+    validations:
+      required: true
