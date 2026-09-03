@@ -1,15 +1,23 @@
-# JVFI 0.7.3
+# JVFI 0.7.4
+
+## 更新
+
+- 新增「套用媒體庫」選擇，可指定哪些 Jellyfin 媒體庫啟用補幀。
 
 ## 修正
 
-- 修正停止播放後，JVFI 後台仍殘留舊影片並持續顯示「補幀中」的問題。
-- 改善補幀工作結束後的狀態清理，避免舊的補幀資訊持續殘留。
-- 修正硬體與補幀管線顯示可能與 Jellyfin 實際硬體加速設定不一致的問題。
+- 修正部分環境手動指定 RKMPP、Intel QSV 等硬體模式可能無法真正生效的問題。
+- 改善「自動模式」：自動模式會優先保留 Jellyfin 已選好的硬體編碼；若 Jellyfin 目前使用軟體編碼，才由 JVFI 自動判斷。
 
-## 改善
+---
 
-- 更新即時補幀狀態的統計顯示方式。
-- 移除無法由伺服器端準確取得的客戶端呈現與客戶端掉幀資訊。
-- 新增「總輸出」、「補幀新增」與「已處理片長」統計。
-- 補幀統計改以目前連續處理區段計算，Seek 後會重新統計。
-- 暫停或處理進度未增加時，不再把等待時間計入「已處理片長」。
+# English
+
+## Updates
+
+- Added media library selection, allowing frame interpolation to be enabled only for selected Jellyfin libraries.
+
+## Fixes
+
+- Fixed an issue where manually selected hardware modes such as RKMPP and Intel QSV might not actually take effect in some environments.
+- Improved **Auto mode**: it keeps the hardware encoder already selected by Jellyfin. If Jellyfin is currently using software encoding, JVFI chooses the hardware automatically.
