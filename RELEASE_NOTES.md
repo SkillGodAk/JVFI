@@ -3,6 +3,7 @@
 ## 更新
 
 - 新增「套用媒體庫」選擇，可指定哪些 Jellyfin 媒體庫啟用補幀。
+- 新增「套用使用者」選擇，可指定哪些 Jellyfin 使用者啟用補幀。
 
 ## 修正
 
@@ -16,6 +17,7 @@
 ## Updates
 
 - Added media library selection, allowing frame interpolation to be enabled only for selected Jellyfin libraries.
+- Added user selection, allowing frame interpolation to be enabled only for selected Jellyfin users.
 
 ## Fixes
 
