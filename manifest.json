@@ -10,11 +10,11 @@
     "versions": [
       {
         "version": "0.7.4.0",
-        "changelog": "新增可選擇套用補幀的媒體庫與 Jellyfin 使用者；修正手動指定 RKMPP、Intel QSV 等硬體模式可能無法真正生效的問題；改善自動模式，優先保留 Jellyfin 已選好的硬體編碼，若目前使用軟體編碼才由 JVFI 自動判斷。",
+        "changelog": "新增套用範圍，可針對每位 Jellyfin 使用者分別指定哪些媒體庫啟用補幀；修正手動指定 RKMPP、Intel QSV 等硬體模式可能無法真正生效的問題；改善自動模式，優先保留 Jellyfin 已選好的硬體編碼，若目前使用軟體編碼才由 JVFI 自動判斷。",
         "targetAbi": "10.11.11.0",
         "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.4/jellyfin-video-frame-interpolation_0.7.4.0.zip",
-        "checksum": "558B1DBF6320921E3A2DDEBBB2BEBD5B",
-        "timestamp": "2026-09-03T08:04:41Z"
+        "checksum": "BA925C2D2C99DBA231F081D5A62C6325",
+        "timestamp": "2026-09-03T08:30:13Z"
       }
     ]
   }
