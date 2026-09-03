@@ -9,12 +9,12 @@
     "imageUrl": "https://skillgodak.github.io/JVFI/assets/jvfi-icon.png",
     "versions": [
       {
-        "version": "0.7.3.0",
-        "changelog": "修正停止播放後殘留舊工作階段與補幀狀態；改善狀態清理、連續處理區段統計與暫停期間的已處理片長計算；硬體與補幀管線頁面僅顯示實際解碼與編碼方式。",
+        "version": "0.7.4.0",
+        "changelog": "新增可選擇套用補幀的媒體庫；修正手動指定 RKMPP、Intel QSV 等硬體模式可能無法真正生效的問題；改善自動模式，優先保留 Jellyfin 已選好的硬體編碼，若目前使用軟體編碼才由 JVFI 自動判斷。",
         "targetAbi": "10.11.11.0",
-        "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.3/jellyfin-video-frame-interpolation_0.7.3.0.zip",
-        "checksum": "BACF24BFF9FB209AAD7895747C577EA9",
-        "timestamp": "2026-08-30T00:00:00Z"
+        "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.4/jellyfin-video-frame-interpolation_0.7.4.0.zip",
+        "checksum": "850E2A26711087025FCE447543992E36",
+        "timestamp": "2026-09-03T07:27:40Z"
       }
     ]
   }
