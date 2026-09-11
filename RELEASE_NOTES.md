@@ -1,23 +1,25 @@
-# JVFI 0.7.4
+# JVFI 0.7.5
 
-## 更新
+## 新增
 
-- 新增「套用範圍」，可針對每位 Jellyfin 使用者分別指定哪些媒體庫啟用補幀。
+- 新增「同時觀看上限」，可限制同一時間啟用 JVFI 補幀的播放數量。
+- 達到設定上限後，新開始的播放將不啟用 JVFI 補幀，並維持 Jellyfin 原本的播放方式。
+- 已經取得補幀的播放不會受到後續新播放影響，會持續補幀直到該次播放結束。
 
-## 修正
+## 改善
 
-- 修正部分環境手動指定 RKMPP、Intel QSV 等硬體模式可能無法真正生效的問題。
-- 改善「自動模式」：自動模式會優先保留 Jellyfin 已選好的硬體編碼；若 Jellyfin 目前使用軟體編碼，才由 JVFI 自動判斷。
+- 改善「套用使用者」介面，讓每位使用者與其套用媒體庫的層級更容易辨識。
 
 ---
 
 # English
 
-## Updates
+## Added
 
-- Added **Scope** settings, allowing each Jellyfin user to have an independent set of libraries where frame interpolation is enabled.
+- Added a **Concurrent Viewing Limit** to control how many playback sessions can use JVFI frame interpolation at the same time.
+- When the configured limit is reached, newly started playback will not use JVFI interpolation and will follow Jellyfin's original playback behavior.
+- Playback sessions that have already started with interpolation will continue normally until that playback session ends.
 
-## Fixes
+## Improvements
 
-- Fixed an issue where manually selected hardware modes such as RKMPP and Intel QSV might not actually take effect in some environments.
-- Improved **Auto mode**: it keeps the hardware encoder already selected by Jellyfin. If Jellyfin is currently using software encoding, JVFI chooses the hardware automatically.
+- Improved the **Users** section so each user's selected libraries are easier to distinguish.
