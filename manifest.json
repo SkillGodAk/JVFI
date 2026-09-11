@@ -10,7 +10,7 @@
     "versions": [
       {
         "version": "0.7.5.0",
-        "changelog": "新增同時觀看上限，可限制同一時間啟用 JVFI 補幀的播放數量；達到上限後新播放維持 Jellyfin 原本播放方式，既有補幀播放不受影響；改善套用使用者介面，讓每位使用者與其套用媒體庫的層級更容易辨識。",
+        "changelog": "新增同時觀看上限，可限制同一時間啟用 JVFI 補幀的播放數量；達到上限後新播放維持 Jellyfin 原本播放方式，既有補幀播放不受影響。",
         "targetAbi": "10.11.11.0",
         "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.5/jellyfin-video-frame-interpolation_0.7.5.0.zip",
         "checksum": "B3CEBA5E70E7C6AC8DC107D30A3EC5D2",
