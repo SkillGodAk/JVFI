@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "guid": "b8d11789-88f4-4230-befd-9550952780ec",
     "name": "JVFI",
@@ -9,14 +9,13 @@
     "imageUrl": "https://skillgodak.github.io/JVFI/assets/jvfi-icon.png",
     "versions": [
       {
-        "version": "0.7.5.0",
-        "changelog": "新增同時觀看上限，可限制同一時間啟用 JVFI 補幀的播放數量；達到上限後新播放維持 Jellyfin 原本播放方式，既有補幀播放不受影響。",
+        "version": "0.7.6.0",
+        "changelog": "改善高位深 SDR 與更多影片格式的補幀相容性；依最終輸出自動選擇處理格式以降低不必要的轉換與效能損耗；改善 RKMPP、Intel QSV、VAAPI、NVIDIA 等硬體路徑相容性；HDR/HLG/Dolby Vision 維持 Jellyfin 原本處理方式。",
         "targetAbi": "10.11.11.0",
-        "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.5/jellyfin-video-frame-interpolation_0.7.5.0.zip",
-        "checksum": "B3CEBA5E70E7C6AC8DC107D30A3EC5D2",
-        "timestamp": "2026-09-11T13:51:27Z"
+        "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.6/jellyfin-video-frame-interpolation_0.7.6.0.zip",
+        "checksum": "E6ADC370E547A160ADD5E8F9A221416F",
+        "timestamp": "2026-09-15T08:21:52Z"
       }
     ]
   }
 ]
-
