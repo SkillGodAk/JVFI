@@ -68,14 +68,14 @@ If JVFI is useful to you, support for the author is welcome.
 
 ### International Support
 
-[Buy Me a Coffee](https://buymeacoffee.com/SkillGodAK)
+<a href="https://buymeacoffee.com/SkillGodAK"><img src="assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
 ### Bank transfer
 
-<img src="assets/donate-bank.jpg" alt="Bank transfer QR code" width="360">
+<img src="assets/donate-bank.jpg" alt="Bank transfer QR code" width="180">
 
 ### WeChat Pay
 
-<img src="assets/donate-wechat.jpg" alt="WeChat Pay QR code" width="360">
+<img src="assets/donate-wechat.jpg" alt="WeChat Pay QR code" width="180">
 
 JVFI is an independent third-party project and is not affiliated with the Jellyfin project.

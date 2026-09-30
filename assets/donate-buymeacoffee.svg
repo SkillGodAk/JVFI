@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360" role="img" aria-labelledby="title desc">
+  <title id="title">Buy Me a Coffee</title>
+  <desc id="desc">Support SkillGodAK on Buy Me a Coffee</desc>
+  <rect width="360" height="360" fill="#ffffff"/>
+  <rect x="38" y="38" width="284" height="284" rx="48" fill="#ffdd00"/>
+  <g fill="#161616">
+    <rect x="128" y="116" width="92" height="72" rx="14"/>
+    <path d="M216 128h16c24 0 36 14 36 31s-12 31-36 31h-14v-16h14c13 0 20-5 20-15s-7-15-20-15h-16z"/>
+    <rect x="118" y="201" width="128" height="10" rx="5"/>
+  </g>
+  <g fill="none" stroke="#161616" stroke-width="8" stroke-linecap="round">
+    <path d="M145 101c-8-12 7-20 0-32"/>
+    <path d="M174 101c-8-12 7-20 0-32"/>
+    <path d="M203 101c-8-12 7-20 0-32"/>
+  </g>
+  <text x="180" y="276" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#161616">Buy Me a Coffee</text>
+</svg>

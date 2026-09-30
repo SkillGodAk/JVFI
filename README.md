@@ -83,14 +83,14 @@ JVFI 可顯示啟用狀態、目標 FPS、即時處理速度與補幀工作狀�
 
 ### 國外贊助
 
-[Buy Me a Coffee](https://buymeacoffee.com/SkillGodAK)
+<a href="https://buymeacoffee.com/SkillGodAK"><img src="assets/donate-buymeacoffee.svg" alt="Buy Me a Coffee" width="180"></a>
 
 ### 銀行收款
 
-<img src="assets/donate-bank.jpg" alt="銀行收款 QR Code" width="360">
+<img src="assets/donate-bank.jpg" alt="銀行收款 QR Code" width="180">
 
 ### 微信收款
 
-<img src="assets/donate-wechat.jpg" alt="微信收款 QR Code" width="360">
+<img src="assets/donate-wechat.jpg" alt="微信收款 QR Code" width="180">
 
 JVFI 是獨立第三方 Jellyfin 插件，並非 Jellyfin 官方產品。
