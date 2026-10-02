@@ -4,18 +4,20 @@
 
 **繁體中文** | [简体中文](README.zh-CN.md) | [English](README_EN.md)
 
-JVFI 是專為 Jellyfin 設計的伺服器端即時補幀插件。播放影片時，JVFI 會將影片處理為使用者設定的目標幀率，讓低幀率影片播放得更流暢。Jellyfin Web、Jellyfin Media Player、Android 與 Android TV 等客戶端不需要另外安裝 JVFI。
+JVFI 是專為 Jellyfin 設計的伺服器端即時補幀插件。播放影片時，可使用原有的自訂目標幀率補幀，或在合格硬體上啟用「平滑效果 原幀率 X2」。Jellyfin Web、Jellyfin Media Player、Android 與 Android TV 等客戶端不需要另外安裝 JVFI。
 
 ## 主要功能
 
 - 支援自訂 `23.976-240 FPS` 輸出，預設 `60 FPS`
+- 可選的「平滑效果 原幀率 X2」，關閉時維持原有補幀
 - 伺服器端即時補幀，預設保留原始解析度
 - 自動偵測硬體加速能力，支援 Intel、AMD、NVIDIA、Rockchip 與 Apple 常見平台
 - 硬體與補幀管線顯示會依 Jellyfin 實際硬體加速設定同步判斷
 - 硬體不可用時使用相容路徑，無法安全補幀時保留 Jellyfin 原始播放流程
 - 支援 Jellyfin Web、Jellyfin Media Player、Android、Android TV 與標準轉碼串流客戶端
 - 提供即時補幀狀態、處理資訊與安全回退
-- 可分別設定 480p、720p、1080p、4K 最低輸出位元率
+- 平滑執行環境隨插件一起安裝，只套用於通過自測的 JVFI 轉碼，不替換 Jellyfin 全域 FFmpeg
+- 可分別設定 480p、720p、1080p、1440p、4K 最低輸出位元率
 - 設定介面支援繁體中文、英文與日文
 
 ## 硬體支援
@@ -24,8 +26,8 @@ JVFI 依伺服器實際能力選擇處理方式，不只依硬體型號判斷。
 
 | 硬體平台 | 狀態 |
 |---|---|
-| Rockchip RK3588 / RK3588S | 已實機測試 |
-| Intel、AMD、NVIDIA | 已加入支援，持續測試中 |
+| Rockchip RK3588 / RK3588S | 原補幀與平滑 X2 已實機測試 |
+| Intel、AMD、NVIDIA（Linux x64） | 已加入平滑適配器；只有本機端到端自測通過才啟用 |
 | Apple 裝置 | 已加入相容支援，持續測試中 |
 | 純 CPU 環境 | 可使用，效能依處理器而定 |
 
@@ -38,7 +40,12 @@ JVFI 依伺服器實際能力選擇處理方式，不只依硬體型號判斷。
 | 480p | 4 Mbps |
 | 720p | 8 Mbps |
 | 1080p | 16 Mbps |
+| 1440p | 30 Mbps |
 | 4K | 40 Mbps |
+
+## 平滑效果範圍
+
+平滑效果固定輸出為原幀率 X2，目前核准 `1920x1080` 與 `3840x2160` surface。其他解析度、HDR／HLG／Dolby Vision、未通過自測或不相容的硬體路徑會安全退回原有補幀，不會阻止 Jellyfin 播放。
 
 ## 安裝
 

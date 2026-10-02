@@ -6,11 +6,12 @@
 
 [繁體中文](README.md) | **简体中文** | [English](README_EN.md)
 
-JVFI 是 Jellyfin 的服务器端实时补帧插件。播放时由 Jellyfin 官方 `jellyfin-ffmpeg` 生成可自定义帧率的标准转码流，Jellyfin Web、Jellyfin Media Player、Android 和 Android TV 等客户端无需另外安装扩展。
+JVFI 是 Jellyfin 的服务器端实时补帧插件。它提供原有的自定义目标帧率补帧，以及在合格硬件上启用的可选“平滑效果 原帧率 X2”。Jellyfin Web、Jellyfin Media Player、Android 和 Android TV 等客户端无需另外安装扩展。
 
 ## 主要功能
 
 - 自定义 `23.976–240 FPS` 目标输出帧率，默认 60 FPS
+- 可选“平滑效果 原帧率 X2”，关闭后维持原有补帧
 - 默认保留视频原始分辨率，不强制降低到 480p 或 1080p
 - 支持 Jellyfin Web、Jellyfin Media Player、Android、Android TV 与其他兼容客户端
 - 使用 Jellyfin 官方 `jellyfin-ffmpeg`，无需替换 FFmpeg
@@ -18,8 +19,9 @@ JVFI 是 Jellyfin 的服务器端实时补帧插件。播放时由 Jellyfin 官�
 - 硬件与补帧管线显示会根据 Jellyfin 实际硬件加速设置同步判断
 - 支持常见 Intel QSV / VAAPI、AMD VAAPI / AMF、NVIDIA NVENC、Rockchip RKMPP 与 Apple VideoToolbox 路径检测
 - 硬件路径不可用时自动使用兼容模式；无法安全补帧时保留原 Jellyfin 播放流程
+- 平滑运行环境随插件一起安装，只用于通过自检的 JVFI 转码，不会替换 Jellyfin 全局 FFmpeg
 - 播放 HUD 显示补帧状态、时间轴 FPS、运算吞吐与管线速度
-- 480p、720p、1080p、4K 可分别设置最低输出码率
+- 480p、720p、1080p、1440p、4K 可分别设置最低输出码率
 - 设置界面支持繁体中文、英文和日文
 
 ## 从 Jellyfin 插件目录安装
@@ -61,6 +63,10 @@ Docker 示例：
 | Jellyfin Media Player | 支持标准转码流 |
 | Android / Android TV | 支持标准转码流 |
 | 其他硬件与较新 Jellyfin 版本 | 启动时根据实际能力检查结果决定是否启用 |
+
+## 平滑效果范围
+
+平滑效果固定输出为原帧率 X2，目前核准 `1920x1080` 与 `3840x2160` surface。其他分辨率、HDR／HLG／Dolby Vision、未通过自检或不兼容的硬件路径会安全退回原有补帧，不会阻止 Jellyfin 播放。
 
 ## 赞助作者
 

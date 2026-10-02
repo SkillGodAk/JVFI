@@ -6,11 +6,12 @@
 
 [繁體中文](README.md) | [简体中文](README.zh-CN.md) | **English**
 
-JVFI is a server-side real-time frame interpolation plugin for Jellyfin. During playback, it uses the official `jellyfin-ffmpeg` pipeline to produce a standard transcoded stream at a configurable frame rate. Jellyfin Web, Jellyfin Media Player, Android, and Android TV clients do not require a separate extension.
+JVFI is a server-side real-time frame interpolation plugin for Jellyfin. It provides the existing configurable target-frame-rate mode and an optional **Smooth effect — source FPS X2** mode on qualified hardware. Jellyfin Web, Jellyfin Media Player, Android, and Android TV clients do not require a separate extension.
 
 ## Features
 
 - Configurable `23.976–240 FPS` target output, with 60 FPS as the default
+- Optional **Smooth effect — source FPS X2** mode; disabling it keeps the original interpolation path
 - Preserves the source resolution by default instead of forcing 480p or 1080p
 - Supports Jellyfin Web, Jellyfin Media Player, Android, Android TV, and compatible clients
 - Uses the official `jellyfin-ffmpeg` binary without replacing FFmpeg
@@ -18,8 +19,9 @@ JVFI is a server-side real-time frame interpolation plugin for Jellyfin. During 
 - Hardware and interpolation pipeline display follows Jellyfin's actual hardware acceleration settings
 - Detects common Intel QSV / VAAPI, AMD VAAPI / AMF, NVIDIA NVENC, Rockchip RKMPP, and Apple VideoToolbox paths
 - Falls back to a compatible path when hardware processing is unavailable and preserves normal Jellyfin playback when interpolation cannot run safely
+- Bundles the private smooth runtime with the plugin; it is used only by self-tested JVFI transcodes and never replaces Jellyfin's global FFmpeg installation
 - Optional playback HUD for interpolation status, timeline FPS, compute throughput, and pipeline speed
-- Separate minimum bitrate controls for 480p, 720p, 1080p, and 4K output
+- Separate minimum bitrate controls for 480p, 720p, 1080p, 1440p, and 4K output
 - Traditional Chinese, English, and Japanese settings UI
 
 ## Install from the Jellyfin catalog
@@ -61,6 +63,10 @@ Fully restart Jellyfin to load the plugin.
 | Jellyfin Media Player | Standard transcoded stream supported |
 | Android / Android TV | Standard transcoded stream supported |
 | Other hardware and newer Jellyfin versions | Enabled according to runtime capability checks |
+
+## Smooth X2 scope
+
+Smooth effect always outputs source FPS X2. The currently qualified Base3 surfaces are `1920x1080` and `3840x2160`. Other resolutions, HDR/HLG/Dolby Vision, failed self-tests, and incompatible hardware paths safely fall back to the original interpolation path without blocking Jellyfin playback.
 
 ## Support the author
 
