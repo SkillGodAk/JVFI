@@ -64,9 +64,18 @@ Docker 示例：
 | Android / Android TV | 支持标准转码流 |
 | 其他硬件与较新 Jellyfin 版本 | 启动时根据实际能力检查结果决定是否启用 |
 
+目前只有 Rockchip RK3588／RK3588S 完成 JVFI 平滑效果实机验证。以下型号只是具备相近解码、OpenCL 运算与硬件编码条件的实验候选，不代表已经确认可用；能否启用以及是否达到实时速度，仍以每台主机的完整自检结果为准。
+
+- ARM／Rockchip：RK3576（性能低于 RK3588，4K 实时能力仍需验证）
+- Intel：N95、N100、N150、N200、N250、Core i3-N300、Core i3-N305、Core 3 N350、Core 3 N355、Core i5-11400、Pentium Gold G7400、Arc A380／A580／A750／A770／B570／B580
+- AMD：Radeon RX 6600／6700／6800／6900 系列、RX 7700 XT／7800 XT／7900 系列、RX 9060／9070 系列、Radeon Pro W6800／W7700／W7800／W7900
+- NVIDIA：GeForce GTX 1650／1660 系列、RTX 20／30／40／50 系列、T4、RTX A2000／A4000／A5000／A6000
+
+N100 与 N150 具备 Intel Quick Sync、OpenCL 和 Linux media-driver 所需的基础条件，因此列为较有希望的低功耗实验候选；目前尚未使用 JVFI 实机验证，不能保证 1080p 或 4K 的实时处理速度。其他 ARM SoC 因 0.7.7 尚无对应硬件适配器，暂不列入候选。
+
 ## 平滑效果范围
 
-平滑效果固定输出为原帧率 X2，目前核准 `1920x1080` 与 `3840x2160` surface。其他分辨率、HDR／HLG／Dolby Vision、未通过自检或不兼容的硬件路径会安全退回原有补帧，不会阻止 Jellyfin 播放。
+平滑效果固定输出为原帧率 X2，目前认可的分辨率为 4K 以下（含 4K）。其他分辨率、HDR／HLG／Dolby Vision、未通过自检或不兼容的硬件路径会安全退回原有补帧，不会阻止 Jellyfin 播放。
 
 ## 赞助作者
 
