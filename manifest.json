@@ -10,10 +10,10 @@
     "versions": [
       {
         "version": "0.7.7.0",
-        "changelog": "新增可選的「平滑效果 原幀率 X2」，未開啟時維持原有補幀；正式包內建 Linux ARM64／x64 私有平滑執行環境，只有端到端自測通過的硬體才會啟用。修正長片啟動、4K 跳播音畫時間戳、EAC3 轉 AAC 無聲、退出後轉碼未停止與 47.952fps 位元率保護，並新增 1440p 獨立位元率級距。",
+        "changelog": "新增「平滑效果 原幀率 X2」。",
         "targetAbi": "10.11.11.0",
         "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.7/jellyfin-video-frame-interpolation_0.7.7.0.zip",
-        "checksum": "11F0EE4C54564B839892C9BDE5D396FC",
+        "checksum": "9D328E8269A5215416ADFAB2928444CC",
         "timestamp": "2026-10-02T17:19:34Z"
       }
     ]
