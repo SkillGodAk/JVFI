@@ -10,10 +10,10 @@
     "versions": [
       {
         "version": "0.7.7.0",
-        "changelog": "新增「平滑效果 原幀率 X2」。平滑效果固定輸出為原幀率 X2，目前認可的解析度為 4K 以下（含 4K）；其他解析度、HDR／HLG／Dolby Vision、未通過自測或不相容的硬體路徑會安全退回原有補幀。目前只有 RK3588／RK3588S 完成實機驗證；列出的 RK3576、Intel N 系列與 Arc、AMD Radeon RX／Pro、NVIDIA GTX／RTX／T4／RTX A 系列型號皆僅為實驗性候選，仍須在實際主機通過自測後才能使用。",
+        "changelog": "新增「平滑效果 原幀率 X2」。0.7.7 限定 Linux ARM64／Linux x64；目前只有 RK3588／RK3588S 完成實機驗證，其他列出的 Linux 硬體型號均為實驗候選，須通過本機自測後才能啟用。Windows 與 macOS 會安全退回原有補幀。",
         "targetAbi": "10.11.11.0",
         "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.7/jellyfin-video-frame-interpolation_0.7.7.0.zip",
-        "checksum": "0C85706C61F71EBF10A4E9ABC01C1B4E",
+        "checksum": "6AEE16071A326E53334530738A45DD59",
         "timestamp": "2026-10-02T17:19:34Z"
       }
     ]

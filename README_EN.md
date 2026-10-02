@@ -64,18 +64,20 @@ Fully restart Jellyfin to load the plugin.
 | Android / Android TV | Standard transcoded stream supported |
 | Other hardware and newer Jellyfin versions | Enabled according to runtime capability checks |
 
-Only Rockchip RK3588/RK3588S has completed real-device validation for JVFI Smooth effect. The models below are experimental candidates with relevant decode, OpenCL compute, and hardware-encode capabilities. They are not confirmed compatible; activation and real-time performance depend on the complete self-test on each host.
+Smooth X2 in version 0.7.7 is limited to Linux ARM64 and Linux x64. Windows and macOS retain the original interpolation path, while Smooth safely falls back to it. Windows Smooth support is deferred to version 0.7.8 after real-hardware validation.
 
-- ARM/Rockchip: RK3576 (slower than RK3588; real-time 4K performance remains unverified)
-- Intel: N95, N100, N150, N200, N250, Core i3-N300, Core i3-N305, Core 3 N350, Core 3 N355, Core i5-11400, Pentium Gold G7400, Arc A380/A580/A750/A770/B570/B580
-- AMD: Radeon RX 6600/6700/6800/6900 series, RX 7700 XT/7800 XT/7900 series, RX 9060/9070 series, Radeon Pro W6800/W7700/W7800/W7900
-- NVIDIA: GeForce GTX 1650/1660 series, RTX 20/30/40/50 series, T4, RTX A2000/A4000/A5000/A6000
+Only Rockchip RK3588/RK3588S on Linux ARM64 has completed real-device validation for JVFI Smooth effect. The Linux models below are experimental candidates with relevant decode, OpenCL compute, and hardware-encode capabilities. They are not confirmed compatible; activation and real-time performance depend on the complete self-test on each host.
 
-The N100 and N150 provide the Intel Quick Sync, OpenCL, and Linux media-driver prerequisites, making them promising low-power experimental candidates. They have not yet been tested on real hardware with JVFI, so real-time 1080p or 4K performance is not guaranteed. Other ARM SoCs are not listed because version 0.7.7 does not yet include their hardware adapters.
+- Linux ARM64/Rockchip: RK3576 (slower than RK3588; real-time 4K performance remains unverified)
+- Linux x64/Intel: N95, N100, N150, N200, N250, Core i3-N300, Core i3-N305, Core 3 N350, Core 3 N355, Core i5-11400, Pentium Gold G7400, Arc A380/A580/A750/A770/B570/B580
+- Linux x64/AMD: Radeon RX 6600/6600 XT/6700/6800/6900 series, RX 7700 XT/7800 XT/7900 series, RX 9060/9070 series, Radeon Pro W6800/W7700/W7800/W7900
+- Linux x64/NVIDIA: GeForce GTX 1650/1660 series, RTX 20/30/40/50 series, T4, RTX A2000/A4000/A5000/A6000
+
+On Linux, the N100 and N150 provide the Intel Quick Sync, OpenCL, and media-driver prerequisites, making them promising low-power experimental candidates. They have not yet been tested on real hardware with JVFI, so real-time 1080p or 4K performance is not guaranteed. Other ARM SoCs are not listed because version 0.7.7 does not yet include their hardware adapters.
 
 ## Smooth X2 scope
 
-Smooth effect always outputs source FPS X2. The currently recognized resolution range is up to and including 4K. Other resolutions, HDR/HLG/Dolby Vision, failed self-tests, and incompatible hardware paths safely fall back to the original interpolation path without blocking Jellyfin playback.
+Smooth effect always outputs source FPS X2. Version 0.7.7 is limited to Linux ARM64 and Linux x64, with a recognized resolution range up to and including 4K. Windows, macOS, other resolutions, HDR/HLG/Dolby Vision, failed self-tests, and incompatible hardware paths safely fall back to the original interpolation path without blocking Jellyfin playback.
 
 ## Support the author
 
