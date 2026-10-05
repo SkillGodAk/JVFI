@@ -9,12 +9,12 @@
     "imageUrl": "https://skillgodak.github.io/JVFI/assets/jvfi-icon.png",
     "versions": [
       {
-        "version": "0.7.7.0",
-        "changelog": "新增「平滑效果 原幀率 X2」。0.7.7 限定 Linux ARM64／Linux x64；目前只有 RK3588／RK3588S 完成實機驗證，其他列出的 Linux 硬體型號均為實驗候選，須通過本機自測後才能啟用。Windows 與 macOS 會安全退回原有補幀。",
+        "version": "0.7.7.1",
+        "changelog": "0.7.7 Dev 1.0：改善 RK3588／RK3588S 在 4K 平滑 X2 播放時，部分固定畫面會突然卡頓的問題。重新調整補幀分析前的資料傳輸方式，減少不必要的等待與資料搬移；補幀演算法與輸出畫面不變。Windows x64／NVIDIA、Intel、AMD 平滑路徑尚未完成實機驗證。",
         "targetAbi": "10.11.11.0",
-        "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.7/jellyfin-video-frame-interpolation_0.7.7.0.zip",
-        "checksum": "6AEE16071A326E53334530738A45DD59",
-        "timestamp": "2026-10-02T17:19:34Z"
+        "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.7-dev.1.0/jellyfin-video-frame-interpolation_0.7.7.1.zip",
+        "checksum": "BC4C8A4B8D45481468A410A52103FACE",
+        "timestamp": "2026-10-05T13:13:39Z"
       }
     ]
   }
