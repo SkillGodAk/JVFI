@@ -10,7 +10,7 @@
     "versions": [
       {
         "version": "0.7.7.2",
-        "changelog": "0.7.7 Dev 2.0：修正平滑 X2 被固定解析度白名單限制的問題。4K 範圍內的偶數尺寸影片（例如 3840x1640、2560x1440、1920x800）可直接使用 Base3，不再因不是 1920x1080 或 3840x2160 而退回 framerate；保留 Dev 1.0 的 N218 傳輸優化。",
+        "changelog": "修正「平滑效果 原幀率 X2」被固定解析度白名單限制的問題。",
         "targetAbi": "10.11.11.0",
         "sourceUrl": "https://github.com/SkillGodAk/JVFI/releases/download/v0.7.7-dev.2.0/jellyfin-video-frame-interpolation_0.7.7.2.zip",
         "checksum": "48C7C76C7B1FA666766D5009211D8617",
