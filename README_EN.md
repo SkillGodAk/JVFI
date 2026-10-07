@@ -64,7 +64,7 @@ Fully restart Jellyfin to load the plugin.
 | Android / Android TV | Standard transcoded stream supported |
 | Other hardware and newer Jellyfin versions | Enabled according to runtime capability checks |
 
-Smooth X2 in version 0.7.7 is limited to Linux ARM64 and Linux x64. Windows and macOS retain the original interpolation path, while Smooth safely falls back to it. Windows Smooth support is deferred to version 0.7.8 after real-hardware validation.
+Smooth X2 in version 0.7.7 is limited to Linux ARM64 and Linux x64. Windows and macOS retain the original interpolation path, while Smooth safely falls back to it.
 
 Only Rockchip RK3588/RK3588S on Linux ARM64 has completed real-device validation for JVFI Smooth effect. The Linux models below are experimental candidates with relevant decode, OpenCL compute, and hardware-encode capabilities. They are not confirmed compatible; activation and real-time performance depend on the complete self-test on each host.
 
