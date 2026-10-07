@@ -22,7 +22,7 @@ JVFI 是專為 Jellyfin 設計的伺服器端即時補幀插件。播放影片�
 
 ## 硬體支援
 
-0.7.7 的平滑效果 X2 限定 Linux ARM64／Linux x64。Windows 與 macOS 仍可使用原有補幀，但平滑效果會安全退回原補幀；Windows 平滑管線預計於 0.7.8 完成實測後加入。
+0.7.7 的平滑效果 X2 限定 Linux ARM64／Linux x64。Windows 與 macOS 仍可使用原有補幀，但平滑效果會安全退回原補幀。
 
 目前只有 Linux ARM64 的 Rockchip RK3588／RK3588S 完成 JVFI 平滑效果實機驗證。以下是 Linux 上具備相近解碼、OpenCL 運算與硬體編碼條件的實驗候選，不代表已確認可用；實際能否啟用與是否達到即時速度，仍以該主機完整自測結果為準。
 
