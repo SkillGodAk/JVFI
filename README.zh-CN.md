@@ -64,7 +64,7 @@ Docker 示例：
 | Android / Android TV | 支持标准转码流 |
 | 其他硬件与较新 Jellyfin 版本 | 启动时根据实际能力检查结果决定是否启用 |
 
-0.7.7 的平滑效果 X2 限定 Linux ARM64／Linux x64。Windows 与 macOS 仍可使用原有补帧，但平滑效果会安全退回原补帧；Windows 平滑管线计划在 0.7.8 完成实测后加入。
+0.7.7 的平滑效果 X2 限定 Linux ARM64／Linux x64。Windows 与 macOS 仍可使用原有补帧，但平滑效果会安全退回原补帧。
 
 目前只有 Linux ARM64 的 Rockchip RK3588／RK3588S 完成 JVFI 平滑效果实机验证。以下 Linux 型号只是具备相近解码、OpenCL 运算与硬件编码条件的实验候选，不代表已经确认可用；能否启用以及是否达到实时速度，仍以每台主机的完整自检结果为准。
 
