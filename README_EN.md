@@ -79,3 +79,4 @@ On Linux, the N100 and N150 provide the Intel Quick Sync, OpenCL, and media-driv
 
 Smooth effect always outputs source FPS X2. Version 0.7.7 is limited to Linux ARM64 and Linux x64, with a recognized resolution range up to and including 4K. Windows, macOS, other resolutions, HDR/HLG/Dolby Vision, failed self-tests, and incompatible hardware paths safely fall back to the original interpolation path without blocking Jellyfin playback.
 
+JVFI is an independent third-party project and is not affiliated with the Jellyfin project.

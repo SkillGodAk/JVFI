@@ -86,3 +86,4 @@ JVFI 可顯示啟用狀態、目標 FPS、即時處理速度與補幀工作狀�
 | Jellyfin Web / Media Player | 支援 |
 | Android / Android TV | 支援標準轉碼串流 |
 
+JVFI 是獨立第三方 Jellyfin 插件，並非 Jellyfin 官方產品。

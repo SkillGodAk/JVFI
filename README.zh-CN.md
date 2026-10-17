@@ -79,3 +79,4 @@ N100 与 N150 在 Linux 上具备 Intel Quick Sync、OpenCL 和 media-driver 所
 
 平滑效果固定输出为原帧率 X2，0.7.7 限定 Linux ARM64／Linux x64，目前认可的分辨率为 4K 以下（含 4K）。Windows、macOS、其他分辨率、HDR／HLG／Dolby Vision、未通过自检或不兼容的硬件路径会安全退回原有补帧，不会阻止 Jellyfin 播放。
 
+JVFI 是独立第三方插件，并非 Jellyfin 官方产品。Jellyfin 名称及相关商标归其权利人所有。
